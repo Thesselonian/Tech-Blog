@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Just Tech News</title>
+  <title>Tech Blog</title>
   <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
 
@@ -15,10 +15,11 @@
         <a href="/">Tech Blog</a>
       </h1>
       <nav>
+        <a class ="btn-no-style" href="/dashboard">dashboard</a>
         {{#if loggedIn}}
         <button id="logout" class="btn-no-style">logout</button>
         {{else}}
-        <a href="/login">login</a>
+        <a class ="btn-no-style" href="/login">login</a>
         {{/if}}
       </nav>
     </header>
