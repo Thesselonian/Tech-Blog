@@ -11,7 +11,7 @@ router.get('/', withAuth, (req, res) => {
       },
       attributes: [
         'id',
-        'post_url',
+        'post_content',
         'title',
         'created_at',
       ],
@@ -48,7 +48,7 @@ router.get('/edit/:id', withAuth, (req, res) => {
         },
         attributes: [
           'id',
-          'post_url',
+          'post_content',
           'title',
           'created_at',
         ],
@@ -85,5 +85,9 @@ router.get('/edit/:id', withAuth, (req, res) => {
         res.status(500).json(err);
       });
 })
+
+router.get('/create-post', (req, res) => 
+  res.render('create-post')
+)
 
 module.exports = router;
