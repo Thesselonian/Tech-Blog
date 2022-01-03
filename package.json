@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "A Tech Blog",
   "main": "server.js",
+  "engines": {
+    "node": "16.13.0"
+  },
   "scripts": {
     "test": "test",
     "start": "node server.js"
